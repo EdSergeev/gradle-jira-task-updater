@@ -23,36 +23,19 @@ repositories {
 }
 
 dependencies {
+    compile gradleApi()
+    compile localGroovy()
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'org.codehaus.groovy:groovy-all:2.4.4'
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
-group 'com.github.edsergeev'
-version '0.1'
 
-buildscript {
-    ext.kotlin_version = '1.0.3'
+apply plugin: 'maven'
 
+uploadArchives {
     repositories {
-        mavenCentral()
+        mavenDeployer {
+            repository(url: uri('repo'))
+        }
     }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
-apply plugin: 'groovy'
-apply plugin: 'java'
-apply plugin: 'kotlin'
-
-sourceCompatibility = 1.5
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
-    testCompile group: 'junit', name: 'junit', version: '4.11'
 }
