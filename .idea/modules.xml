@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jira-updater.iml" filepath="$PROJECT_DIR$/.idea/modules/jira-updater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jira-updater_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jira-updater_main.iml" group="jira-updater" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jira-updater_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jira-updater_test.iml" group="jira-updater" />
+    </modules>
+  </component>
+</project>
